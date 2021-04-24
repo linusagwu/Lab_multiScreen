@@ -20,7 +20,7 @@ public class Screen2 extends AppCompatActivity {
         if (bundle != null)
         {
             String name = bundle.getString("name");
-            String age = bundle.getString("age");
+            String age = bundle.getString("number");
             TextView tvName = findViewById(R.id.tvName);
             TextView tvAge = findViewById(R.id.tvNumber);
             tvName.setText(name);
