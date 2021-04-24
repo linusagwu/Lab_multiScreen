@@ -10,7 +10,7 @@ import android.widget.EditText;
 public class MainActivity extends AppCompatActivity
 {
     private EditText eName;
-    private EditText ePassword;
+    private EditText eNumber;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,16 +18,16 @@ public class MainActivity extends AppCompatActivity
         setContentView(R.layout.activity_main);
 
         this.eName = this.findViewById(R.id.etName);
-        this.ePassword = this.findViewById(R.id.etNumber);
+        this.eNumber = this.findViewById(R.id.etNumber);
     }
 
     public void onNextScreenButtonClicked(View v)
     {
         String name = eName.getText().toString().trim();
-        String age = ePassword.getText().toString().trim();
+        String age = eNumber.getText().toString().trim();
         Bundle bundle = new Bundle();
         bundle.putString("name", name);
-        bundle.putString("age", age);
+        bundle.putString("number", age);
         Intent intent = new Intent(MainActivity.this, Screen2.class);
         intent.putExtras(bundle);
         startActivity(intent);
