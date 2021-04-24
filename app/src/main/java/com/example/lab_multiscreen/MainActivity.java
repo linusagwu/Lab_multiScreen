@@ -23,15 +23,15 @@ public class MainActivity extends AppCompatActivity
 
     public void onNextScreenButtonClicked(View v)
     {
-        Intent i = new Intent(this,Screen2.class);
-        i.putExtra("name","mike");
-        this.startActivity(i);
-        //String num = this.inputTV.getText().toString();
-        //int inputTV = Integer.parseInt(num);
+        String name = eName.getText().toString().trim();
+        String age = ePassword.getText().toString().trim();
+        Bundle bundle = new Bundle();
+        bundle.putString("name", name);
+        bundle.putString("age", age);
+        Intent intent = new Intent(MainActivity.this, Screen2.class);
+        intent.putExtras(bundle);
+        startActivity(intent);
 
-        //i.putExtra("name", "Mike");
-        //i.putExtra("counter", counter);
-       // MySingleton.fac = inputTV;
-       // this.startActivity(i);
+
     }
 }

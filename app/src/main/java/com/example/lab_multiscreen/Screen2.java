@@ -9,16 +9,24 @@ import android.widget.TextView;
 
 public class Screen2 extends AppCompatActivity {
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_screen2);
 
-        TextView nameTV = this.findViewById(R.id.nameTV3);
-        Intent myIntent = this.getIntent();
-        String name = myIntent.getStringExtra("name");
-        nameTV.setText(name);
+        Bundle bundle = getIntent().getExtras();
+        if (bundle != null)
+        {
+            String name = bundle.getString("name");
+            String age = bundle.getString("age");
+            TextView tvName = findViewById(R.id.tvName);
+            TextView tvAge = findViewById(R.id.tvNumber);
+            tvName.setText(name);
+            tvAge.setText(age);
+        }
+
     }
 
     public void onNextScreenPressed(View v)

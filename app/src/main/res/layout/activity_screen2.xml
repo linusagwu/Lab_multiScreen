@@ -8,18 +8,16 @@
     tools:context=".Screen2">
 
     <TextView
-        android:id="@+id/nameTV2"
+        android:id="@+id/tvName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="TextView"
-        android:textSize="36sp" />
+        android:textSize="30sp" />
 
     <TextView
-        android:id="@+id/numberTV2"
+        android:id="@+id/tvNumber"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="TextView"
-        android:textSize="36sp" />
+        android:textSize="30sp" />
 
     <Button
         android:id="@+id/button"

@@ -8,16 +8,15 @@
     tools:context=".Screen3">
 
     <TextView
-        android:id="@+id/nameTV3"
+        android:id="@+id/tvname"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="TextView"
-        android:textSize="36sp" />
+        android:textSize="30sp" />
 
     <TextView
-        android:id="@+id/numberTV3"
+        android:id="@+id/tvnumber"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="TextView"
-        android:textSize="36sp" />
+        android:textSize="30sp" />
 </LinearLayout>
+
